@@ -1,0 +1,24 @@
+*.o
+build/
+bin/
+
+.config
+*.pyc
+
+TEST_LOGS
+
+# Results for the checking of the Python coding style and static analysis
+.mypy_cache
+flake8_output.txt
+
+# ESP-IDF default build directory name
+build
+
+# lock files for examples and components
+dependencies.lock
+
+# managed_components for examples
+managed_components
+
+# pytest log
+pytest_embedded_log/
