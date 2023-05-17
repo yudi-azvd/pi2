@@ -42,7 +42,11 @@ scan.addEventListener('click', async () => {
       par.innerText = arr.join(', ')
     })
 
+    // characteristic?.removeEventListener()
+
     characteristic?.readValue()
+    const b = new SourceBuffer()
+    await characteristic?.writeValue(b)
   }
 
   catch (e) {
